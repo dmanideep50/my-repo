@@ -1,11 +1,11 @@
 package com.project5;
 import java.util.ArrayList;
-//import java.util.Arrays;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 public class BugFix {
 	public static void main(String[] args) {
-	       //System.out.println("Hello World!");/
+	       System.out.println("Hello World!");
 	        System.out.println("\n******\n");
 	        System.out.println("\tWelcome to my Application\n");
 	        System.out.println("******");
@@ -100,7 +100,7 @@ public class BugFix {
 	        }
 	    }
 	    private static void sortExpenses(ArrayList<Integer> arrayList) {
-	      //  int arrlength =  arrayList.size();
+	      int arrlength =  arrayList.size();
 	        
 	        Collections.sort(arrayList);
 	        System.out.println("Sorted expenses: ");
@@ -112,6 +112,3 @@ public class BugFix {
 	       
 	    }
 	}
-
-
-
