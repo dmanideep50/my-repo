@@ -18,7 +18,7 @@ return pat.matcher(email).matches();
 		ArrayList<String> address = new ArrayList<>();
         
         address.add("dmanideep50@gmail.com");
-        address.add("abc.o@gmail.com");
+        address.add("abc.ogmail.com");
           
       for(String i : address){
           if (isValid(i))
