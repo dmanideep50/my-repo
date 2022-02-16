@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Scanner;
 public class BugFix {
 	public static void main(String[] args) {
-	       //System.out.println("Hello World!");/
+	       System.out.println("Hello World!");
 	        System.out.println("\n******\n");
 	        System.out.println("\tWelcome to my Application\n");
 	        System.out.println("******");
@@ -34,8 +34,8 @@ public class BugFix {
 	        expenses.add(500);
 	        expenses.addAll(arrlist);
 	        System.out.println("\nEnter your choice:\t");
-	        Scanner sc = new Scanner(System.in);
-	        int  options =  sc.nextInt();
+	        Scanner scanner = new Scanner(System.in);
+	        int  options =  scanner.nextInt();
 	        for(int j=1;j<=slen;j++){
 	            if(options==j){
 	                switch (options){
@@ -46,7 +46,7 @@ public class BugFix {
 	                        break;
 	                    case 2:
 	                        System.out.println("Enter the value to add your Expense: \n");
-	                        int value = sc.nextInt();
+	                        int value = scanner.nextInt();
 	                        expenses.add(value);
 	                        System.out.println("Your value is updated\n");
 	                        expenses.addAll(arrlist);
@@ -56,7 +56,7 @@ public class BugFix {
 	                        break;
 	                    case 3:
 	                        System.out.println("You are about the delete all your expenses! \nConfirm again by selecting the same option...\n");
-	                        int con_choice = sc.nextInt();
+	                        int con_choice = scanner.nextInt();
 	                        if(con_choice==options){
 	                               expenses.clear();
 	                            System.out.println(expenses+"\n");
@@ -91,8 +91,8 @@ public class BugFix {
 	    private static void searchExpenses(ArrayList<Integer> arrayList) {
 	        int leng = arrayList.size();
 	        System.out.println("Enter the expense you need to search:\t");
-	        Scanner sc = new Scanner(System.in);
-	        int input = sc.nextInt();
+	        Scanner scanner = new Scanner(System.in);
+	        int input = scanner.nextInt();
 	        for(int i=0;i<leng;i++) {
 	        	if(arrayList.get(i)==input) {
 	        		System.out.println("Found the expense " + input + " at " + i + " position");
@@ -100,7 +100,7 @@ public class BugFix {
 	        }
 	    }
 	    private static void sortExpenses(ArrayList<Integer> arrayList) {
-	      //  int arrlength =  arrayList.size();
+	        //int arrlength =  arrayList.size();
 	        
 	        Collections.sort(arrayList);
 	        System.out.println("Sorted expenses: ");
