@@ -34,10 +34,12 @@ class MyLinkedList{
 		
 		if(isEmpty()) {
 			head=node;
-			tail=node;			
+			tail=node;
+			
 		}else {
 			tail.address=node;
 			tail=node;
+			
 		}
 		
 	}
@@ -49,10 +51,12 @@ class MyLinkedList{
 		
 		if(isEmpty()) {
 			head=node;
-			tail=node;			
+			tail=node;	
+			
 		}else {
 			tail.address=node;
 			tail=node;
+			
 		}
 		
 	}
